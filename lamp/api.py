@@ -10,7 +10,7 @@ def set_callback(func: Callable[[str], None]):
 
 # 设置电灯状态 True 为开灯，False 为关灯
 def set_status(value: bool):
-    commands = {'commands': [{'code': 'switch_1', 'value': value}]}
+    commands = {'commands': [{'code': 'switch_on', 'value': value}]}
     device.send_commands(commands)
 
 
